@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class audio_manager : MonoBehaviour
 {
-    [SerializeField] AudioSource audio_source;
-    [SerializeField] AudioSource default_audio_source;
-    [SerializeField] AudioClip shoot_clip;
-    [SerializeField] AudioClip reload_clip;
-    [SerializeField] AudioClip energy_clip;
-    [SerializeField] AudioClip die_clip;
-    [SerializeField] AudioClip win_clip;
-    [SerializeField] AudioClip select_clip;
-    [SerializeField] AudioClip hit_clip;
-    [SerializeField] AudioClip lose_clip;
-    [SerializeField] AudioClip score_clip;
+    public AudioSource audio_source;
+    public AudioSource default_audio_source;
+    public AudioClip shoot_clip;
+    public AudioClip reload_clip;
+    public AudioClip energy_clip;
+    public AudioClip die_clip;
+    public AudioClip win_clip;
+    public AudioClip select_clip;
+    public AudioClip hit_clip;
+    public AudioClip lose_clip;
+    public AudioClip score_clip;
     
     public void play_shoot()
     {

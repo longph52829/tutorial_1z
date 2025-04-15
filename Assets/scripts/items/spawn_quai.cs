@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class spawn_quai : MonoBehaviour
 {
-    [SerializeField] GameObject[] quai;
-    [SerializeField] float time;
+    public GameObject[] quai;
+    public float time;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +17,7 @@ public class spawn_quai : MonoBehaviour
         
     }
 
-    IEnumerator spawn_wait()
+    public IEnumerator spawn_wait()
     {
         while (true)
         {
@@ -27,7 +27,7 @@ public class spawn_quai : MonoBehaviour
         }
     }
 
-    void spawn()
+    public void spawn()
     {
         var random =  quai[Random.Range(0, quai.Length)];
         
